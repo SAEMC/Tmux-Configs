@@ -138,7 +138,7 @@ bind j select-pane -D
 bind k select-pane -U
 bind l select-pane -R
 bind p paste-buffer
-bind r source-file $HOME/.tmux.conf
+bind r source-file \$HOME/.tmux.conf
 bind s split-window -v
 bind v split-window -h
 bind "'" copy-mode
