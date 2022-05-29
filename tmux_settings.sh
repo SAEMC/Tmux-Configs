@@ -132,6 +132,10 @@ unbind -T copy-mode-vi Space
 unbind -T prefix n
 unbind -T prefix \\"
 unbind -T prefix %
+bind C-h resize-pane -L
+bind C-j resize-pane -D
+bind C-k resize-pane -U
+bind C-l resize-pane -R
 bind C-Space send-prefix
 bind h select-pane -L
 bind j select-pane -D
@@ -144,10 +148,6 @@ bind v split-window -h
 bind "'" copy-mode
 bind [ previous-window
 bind ] next-window
-bind -n M-j resize-pane -D
-bind -n M-k resize-pane -U
-bind -n M-h resize-pane -L
-bind -n M-l resize-pane -R
 bind -T copy-mode-vi v send -X begin-selection
 EOF
 }
