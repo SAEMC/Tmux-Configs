@@ -25,17 +25,19 @@ $ ./tmux_settings.sh [OPTIONS]
 
 ### 사용 방법
 
+#### 기존 Prefix `<Ctrl>` + `b`에서 `<Ctrl>` + `<Space>`로 변경
+
 #### 매핑된 커맨드는 `~/.tmux.conf` 파일 확인
 
 #### 이외의 커맨드는 Tmux 기본 커맨드 (Tmux 기본 커맨드 참조)
 
 <br/>
 
-- `<Ctrl>` + `b` + [[`h` or `j` or `k` or `l`]]: 페인(Pane) 이동
-- `<Ctrl>` + `b` + `p`: 붙여넣기 (Paste)
-- `<Ctrl>` + `b` + `r`: `~/.tmux.conf` 리로드 (Reload)
-- `<Ctrl>` + `b` + `s`: 페인 수평 분할 (Split)
-- `<Ctrl>` + `b` + `v`: 페인 수직 분할 (Vertical Split)
-- `<Ctrl>` + `b` + `y`: Copy Mode에서 복사 (Yank)
-- `<Ctrl>` + `b` + `'`: Copy Mode 진입
-- `<Ctrl>` + `b` + [[`[` or `]`]]: 윈도우 이동
+- `<Ctrl>` + `<Space>` + [[`h` or `j` or `k` or `l`]]: 페인(Pane) 이동
+- `<Ctrl>` + `<Space>` + `p`: 붙여넣기 (Paste)
+- `<Ctrl>` + `<Space>` + `r`: `~/.tmux.conf` 리로드 (Reload)
+- `<Ctrl>` + `<Space>` + `s`: 페인 수평 분할 (Split)
+- `<Ctrl>` + `<Space>` + `v`: 페인 수직 분할 (Vertical Split)
+- `<Ctrl>` + `<Space>` + `y`: Copy Mode에서 복사 (Yank)
+- `<Ctrl>` + `<Space>` + `'`: Copy Mode 진입
+- `<Ctrl>` + `<Space>` + [[`[` or `]`]]: 윈도우 이동
