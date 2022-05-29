@@ -120,6 +120,10 @@ bind v split-window -h
 bind "'" copy-mode
 bind [ previous-window
 bind ] next-window
+bind -n M-j resize-pane -D
+bind -n M-k resize-pane -U
+bind -n M-h resize-pane -L
+bind -n M-l resize-pane -R
 bind -T copy-mode-vi v send -X begin-selection
 EOF
 }
