@@ -130,7 +130,7 @@ set-window-option -g automatic-rename on
 unbind C-b
 unbind -T copy-mode-vi Space
 unbind -T prefix n
-unbind -T prefix \"
+unbind -T prefix \\"
 unbind -T prefix %
 bind C-Space send-prefix
 bind h select-pane -L
