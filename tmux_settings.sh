@@ -65,6 +65,9 @@ function installDependencies() {
       /bin/zsh -e "brew install tmux"
     fi
 
+    # Install Asciiquarium
+    /bin/zsh -e "brew install asciiquarium"
+
   # If not Ubuntu and Mac
   else
     echo "${os_type} not supports!"
