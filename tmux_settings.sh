@@ -109,12 +109,18 @@ setw -g monitor-activity on
 set-option -g set-titles on
 set-window-option -g automatic-rename on
 
+unbind C-b
+unbind -T copy-mode-vi Space
+unbind -T prefix n
+unbind -T prefix \"
+unbind -T prefix %
+bind C-Space send-prefix
 bind h select-pane -L
 bind j select-pane -D
 bind k select-pane -U
 bind l select-pane -R
 bind p paste-buffer
-bind r source-file \$HOME/.tmux.conf
+bind r source-file $HOME/.tmux.conf
 bind s split-window -v
 bind v split-window -h
 bind "'" copy-mode
