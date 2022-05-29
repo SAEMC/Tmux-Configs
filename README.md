@@ -32,8 +32,10 @@ $ ./tmux_settings.sh [OPTIONS]
 <br/>
 
 - `<Ctrl>` + `b` + [[`h` or `j` or `k` or `l`]]: 페인(Pane) 이동
+- `<Ctrl>` + `b` + `p`: 붙여넣기 (Paste)
 - `<Ctrl>` + `b` + `r`: `~/.tmux.conf` 리로드 (Reload)
 - `<Ctrl>` + `b` + `s`: 페인 수평 분할 (Split)
 - `<Ctrl>` + `b` + `v`: 페인 수직 분할 (Vertical Split)
-- `<Ctrl>` + `b` + `y`: 페인 싱크 타이핑 (Yank)
+- `<Ctrl>` + `b` + `y`: Copy Mode에서 복사 (Yank)
+- `<Ctrl>` + `b` + `'`: Copy Mode 진입
 - `<Ctrl>` + `b` + [[`[` or `]`]]: 윈도우 이동
