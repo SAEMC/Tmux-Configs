@@ -39,6 +39,15 @@ function installDependencies() {
       sudo apt-get install -y tmux
     fi
 
+    # Install Asciiquarium
+    sudo add-apt-repository -yu ppa:ytvwld/asciiquarium
+    sudo apt-get install -y asciiquarium
+
+    cat >>${HOME}/.bashrc <<EOF
+
+# Asciiquarium Alias
+alias aqua="asciiquarium"
+EOF
   # If Mac
   elif [[ "$os_type" == "darwin"* ]]; then
     echo -e "\n *** Mac detected *** \n"
@@ -67,6 +76,12 @@ function installDependencies() {
 
     # Install Asciiquarium
     /bin/zsh -e "brew install asciiquarium"
+
+    cat >>${HOME}/.zshrc <<EOF
+
+# Asciiquarium Alias
+alias aqua="asciiquarium"
+EOF
 
   # If not Ubuntu and Mac
   else
