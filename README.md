@@ -36,7 +36,7 @@ $ ./tmux_settings.sh [OPTIONS]
 - `<Ctrl>` + `<Space>` + `<Ctrl>` + [[`h` or `j` or `k` or `l`]]: 페인(Pane) 크기 조절 (`<Ctrl>` 누른 상태에서 3초 내 반복(Repeat) 가능)
 - `<Ctrl>` + `<Space>` + `<Ctrl>` + `s`: 페인 수평 정렬 (Split)
 - `<Ctrl>` + `<Space>` + `<Ctrl>` + `v`: 페인 수직 정렬 (Vertical Split)
-- `<Ctrl>` + `<Space>` + [[`h` or `j` or `k` or `l`]]: 페인(Pane) 이동
+- `<Ctrl>` + `<Space>` + [[`h` or `j` or `k` or `l`]]: 페인 이동
 - `<Ctrl>` + `<Space>` + `p`: 붙여넣기 (Paste)
 - `<Ctrl>` + `<Space>` + `s`: 페인 수평 분할 (Split)
 - `<Ctrl>` + `<Space>` + `u`: `~/.tmux.conf` 업데이트 (Update)
