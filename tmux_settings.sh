@@ -129,26 +129,30 @@ set-window-option -g automatic-rename on
 
 unbind C-b
 unbind -T copy-mode-vi Space
+unbind -T prefix M-1
+unbind -T prefix M-2
 unbind -T prefix n
-unbind -T prefix \\"
+unbind -T prefix \"
 unbind -T prefix %
-bind C-h resize-pane -L
-bind C-j resize-pane -D
-bind C-k resize-pane -U
-bind C-l resize-pane -R
-bind C-Space send-prefix
+bind C-s select-layout even-vertical
+bind C-v select-layout even-horizontal
+bind -r C-h resize-pane -L
+bind -r C-j resize-pane -D
+bind -r C-k resize-pane -U
+bind -r C-l resize-pane -R
+bind -r C-Space send-prefix
+bind -T copy-mode-vi v send -X begin-selection
 bind h select-pane -L
 bind j select-pane -D
 bind k select-pane -U
 bind l select-pane -R
 bind p paste-buffer
-bind r source-file \$HOME/.tmux.conf
+bind u source-file $HOME/.tmux.conf
 bind s split-window -v
 bind v split-window -h
 bind "'" copy-mode
 bind [ previous-window
 bind ] next-window
-bind -T copy-mode-vi v send -X begin-selection
 EOF
 }
 
