@@ -134,6 +134,7 @@ unbind -T prefix M-2
 unbind -T prefix n
 unbind -T prefix \"
 unbind -T prefix %
+
 bind C-s select-layout even-vertical
 bind C-v select-layout even-horizontal
 bind -r C-h resize-pane -L
