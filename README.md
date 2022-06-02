@@ -21,6 +21,19 @@ $ git clone https://github.com/SAEMC/Tmux-Settings && \
 $ ./tmux_settings.sh [OPTIONS]
 ```
 
+- 설치 활성화
+  > Linux인 경우
+
+```bash
+$ source ~/.bashrc
+```
+
+> Mac인 경우
+
+```bash
+$ source ~/.zshrc
+```
+
 ---
 
 ### 사용 방법
