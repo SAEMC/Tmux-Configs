@@ -33,10 +33,13 @@ $ ./tmux_settings.sh [OPTIONS]
 
 <br/>
 
+- `<Ctrl>` + `<Space>` + `<Ctrl>` + [[`h` or `j` or `k` or `l`]]: 페인(Pane) 크기 조절 (`<Ctrl>` 누른 상태에서 3초 내 반복(Repeat) 가능)
+- `<Ctrl>` + `<Space>` + `<Ctrl>` + `s`: 페인 수평 정렬 (Split)
+- `<Ctrl>` + `<Space>` + `<Ctrl>` + `v`: 페인 수직 정렬 (Vertical Split)
 - `<Ctrl>` + `<Space>` + [[`h` or `j` or `k` or `l`]]: 페인(Pane) 이동
 - `<Ctrl>` + `<Space>` + `p`: 붙여넣기 (Paste)
-- `<Ctrl>` + `<Space>` + `r`: `~/.tmux.conf` 리로드 (Reload)
 - `<Ctrl>` + `<Space>` + `s`: 페인 수평 분할 (Split)
+- `<Ctrl>` + `<Space>` + `u`: `~/.tmux.conf` 업데이트 (Update)
 - `<Ctrl>` + `<Space>` + `v`: 페인 수직 분할 (Vertical Split)
 - `<Ctrl>` + `<Space>` + `y`: Copy Mode에서 복사 (Yank)
 - `<Ctrl>` + `<Space>` + `'`: Copy Mode 진입
