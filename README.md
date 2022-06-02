@@ -28,7 +28,6 @@ $ ./tmux_settings.sh [OPTIONS]
 $ source ~/.bashrc
 ```
 
-<br>
 > Mac인 경우
 
 ```bash
