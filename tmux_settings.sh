@@ -110,7 +110,6 @@ function writeScripts() {
   cat >${HOME}/.tmux.conf <<EOF
 
 set -g base-index 1
-set -g bell-action none
 set -g default-terminal "xterm-256color"
 set -g history-limit 10000
 set -g pane-base-index 1
@@ -121,7 +120,6 @@ set -g status-keys vi
 set -g status-left-length 30
 set -g status-left '#[fg=green](#S) #(whoami) '
 set -g status-right ''
-set -g visual-bell off
 set -ga terminal-overrides ",*256col*:Tc"
 set -sg escape-time 0
 setw -g mode-keys vi
