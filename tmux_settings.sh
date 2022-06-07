@@ -3,6 +3,7 @@
 function installDependencies() {
   check_localtime="ls /etc/localtime >/dev/null 2>&1"
   check_tmux="tmux -V >/dev/null 2>&1"
+  check_btop="btop --version >/dev/null 2>&1"
 
   # Check OS
   os_type=$(echo "${OSTYPE}")
@@ -39,6 +40,15 @@ function installDependencies() {
       sudo apt-get install -y tmux
     fi
 
+    # Check Btop
+    eval "$check_btop"
+    if [[ "$?" -ne 0 ]]; then
+      # Install Btop
+      echo -e "\n *** Install Btop *** \n"
+      sudo apt-get install -y snapd
+      sudo snapd install btop
+    fi
+
     # Install Asciiquarium
     sudo add-apt-repository -yu ppa:ytvwld/asciiquarium
     sudo apt-get install -y asciiquarium
@@ -71,11 +81,19 @@ EOF
     if [[ "$?" -ne 0 ]]; then
       # Install Tmux
       echo -e "\n *** Install Tmux *** \n"
-      /bin/zsh -e "brew install tmux"
+      /bin/zsh -c "brew install tmux"
+    fi
+
+    # Check Btop
+    eval "$check_btop"
+    if [[ "$?" -ne 0 ]]; then
+      # Install Btop
+      echo -e "\n *** Install Btop *** \n"
+      /bin/zsh -c "brew install btop"
     fi
 
     # Install Asciiquarium
-    /bin/zsh -e "brew install asciiquarium"
+    /bin/zsh -c "brew install asciiquarium"
 
     cat >>${HOME}/.zshrc <<EOF
 
