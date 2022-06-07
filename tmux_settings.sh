@@ -4,6 +4,9 @@ function installDependencies() {
   check_localtime="ls /etc/localtime >/dev/null 2>&1"
   check_tmux="tmux -V >/dev/null 2>&1"
   check_btop="btop --version >/dev/null 2>&1"
+  check_snap="snap --version >/dev/null 2>&1"
+  check_aqua_ubuntu="ls /usr/games/asciiquarium >/dev/null 2>&1"
+  check_aqua_mac="ls /opt/homebrew/bin/asciiquarium >/dev/null 2>&1"
 
   # Check OS
   os_type=$(echo "${OSTYPE}")
@@ -43,15 +46,27 @@ function installDependencies() {
     # Check Btop
     eval "$check_btop"
     if [[ "$?" -ne 0 ]]; then
+
+      # Check Snap
+      eval "$check_snap"
+      if [[ "$?" -ne 0 ]]; then
+        # Install Snap
+        echo -e "\n *** Install Snap *** \n"
+        sudo apt-get install -y snapd
+      fi
+
       # Install Btop
       echo -e "\n *** Install Btop *** \n"
-      sudo apt-get install -y snapd
-      sudo snapd install btop
+      sudo snap install btop
     fi
 
-    # Install Asciiquarium
-    sudo add-apt-repository -yu ppa:ytvwld/asciiquarium
-    sudo apt-get install -y asciiquarium
+    # Check Asciiquarium
+    eval "$check_aqua_ubuntu"
+    if [[ "$?" -ne 0 ]]; then
+      # Install Asciiquarium
+      sudo add-apt-repository -yu ppa:ytvwld/asciiquarium
+      sudo apt-get install -y asciiquarium
+    fi
 
     cat >>${HOME}/.bashrc <<EOF
 
@@ -92,8 +107,12 @@ EOF
       /bin/zsh -c "brew install btop"
     fi
 
-    # Install Asciiquarium
-    /bin/zsh -c "brew install asciiquarium"
+    # Check Asciiquarium
+    eval "$check_aqua_mac"
+    if [[ "$?" -ne 0 ]]; then
+      # Install Asciiquarium
+      /bin/zsh -c "brew install asciiquarium"
+    fi
 
     cat >>${HOME}/.zshrc <<EOF
 
