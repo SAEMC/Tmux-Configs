@@ -64,6 +64,7 @@ function installDependencies() {
     eval "$check_aqua_ubuntu"
     if [[ "$?" -ne 0 ]]; then
       # Install Asciiquarium
+      echo -e "\n *** Install Asciiquarium *** \n"
       sudo add-apt-repository -yu ppa:ytvwld/asciiquarium
       sudo apt-get install -y asciiquarium
     fi
@@ -111,6 +112,7 @@ EOF
     eval "$check_aqua_mac"
     if [[ "$?" -ne 0 ]]; then
       # Install Asciiquarium
+      echo -e "\n *** Install Asciiquarium *** \n"
       /bin/zsh -c "brew install asciiquarium"
     fi
 
