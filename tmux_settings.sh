@@ -190,7 +190,7 @@ bind p paste-buffer
 bind u source-file $HOME/.tmux.conf
 bind s split-window -v
 bind v split-window -h
-bind \\\\ copy-mode
+bind Space copy-mode
 bind [ previous-window
 bind ] next-window
 EOF
