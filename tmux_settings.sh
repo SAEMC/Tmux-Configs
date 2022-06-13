@@ -163,6 +163,8 @@ set -ga terminal-overrides ",*256col*:Tc"
 set -sg escape-time 0
 setw -g mode-keys vi
 setw -g monitor-activity on
+set-option -g renumber-windows on
+set-option -g repeat-time 3000
 set-option -g set-titles on
 set-window-option -g automatic-rename on
 
