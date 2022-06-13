@@ -55,5 +55,5 @@ $ source ~/.zshrc
 - `<Ctrl>` + `<Space>` + `u`: `~/.tmux.conf` 업데이트 (Update)
 - `<Ctrl>` + `<Space>` + `v`: 페인 수직 분할 (Vertical Split)
 - `<Ctrl>` + `<Space>` + `y`: Copy Mode에서 복사 (Yank)
-- `<Ctrl>` + `<Space>` + `<Space>`: Copy Mode 진입
+- `<Ctrl>` + `<Space>` + `<Space>`: Copy Mode 진입 (VI 계열 커맨드 사용)
 - `<Ctrl>` + `<Space>` + [[`[` or `]`]]: 윈도우 이동
