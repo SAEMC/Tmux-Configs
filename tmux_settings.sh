@@ -182,10 +182,10 @@ unbind -T prefix %
 
 bind C-s select-layout even-vertical
 bind C-v select-layout even-horizontal
-bind -r C-h resize-pane -L
-bind -r C-j resize-pane -D
-bind -r C-k resize-pane -U
-bind -r C-l resize-pane -R
+bind -r M-h resize-pane -L
+bind -r M-j resize-pane -D
+bind -r M-k resize-pane -U
+bind -r M-l resize-pane -R
 bind -r C-Space send-prefix
 bind -T copy-mode-vi v send -X begin-selection
 bind h select-pane -L
