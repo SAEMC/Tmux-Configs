@@ -172,6 +172,10 @@ unbind C-b
 unbind -T copy-mode-vi Space
 unbind -T prefix M-1
 unbind -T prefix M-2
+unbind -T prefix M-Up
+unbind -T prefix M-Down
+unbind -T prefix M-Left
+unbind -T prefix M-Right
 unbind -T prefix n
 unbind -T prefix \"
 unbind -T prefix %
