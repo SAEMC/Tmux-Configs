@@ -170,7 +170,7 @@ set-option -g repeat-time 3000
 set-option -g set-titles on
 set-window-option -g automatic-rename on
 set-window-option -g window-status-activity-style fg=red
-set-window-option -g window-status-current-style fg=green
+set-window-option -g window-status-current-style fg=green,bold
 
 unbind C-b
 unbind -T copy-mode-vi Space
