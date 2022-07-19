@@ -152,16 +152,18 @@ set -g base-index 1
 set -g default-terminal "xterm-256color"
 set -g history-limit 10000
 set -g pane-base-index 1
+set -g prefix C-Space
 set -g status-bg black
 set -g status-fg white
 set -g status-interval 20
 set -g status-keys vi
 set -g status-left-length 30
-set -g status-left '#[fg=green](#S) #(whoami) '
+set -g status-left '#[fg=green][ #S ] >>> '
 set -g status-right ''
 set -ga terminal-overrides ",*256col*:Tc"
 set -sg escape-time 0
 setw -g mode-keys vi
+setw -g mouse on
 setw -g monitor-activity on
 set-option -g renumber-windows on
 set-option -g repeat-time 3000
@@ -172,14 +174,14 @@ set-window-option -g window-status-current-style fg=green
 
 unbind C-b
 unbind -T copy-mode-vi Space
-unbind -T prefix M-1
-unbind -T prefix M-2
 unbind -T prefix M-Up
 unbind -T prefix M-Down
 unbind -T prefix M-Left
 unbind -T prefix M-Right
+unbind -T prefix M-1
+unbind -T prefix M-2
 unbind -T prefix n
-unbind -T prefix \"
+unbind -T prefix \\"
 unbind -T prefix %
 
 bind C-s select-layout even-vertical
@@ -195,8 +197,8 @@ bind j select-pane -D
 bind k select-pane -U
 bind l select-pane -R
 bind p paste-buffer
-bind u source-file $HOME/.tmux.conf
 bind s split-window -v
+bind u source-file \$HOME/.tmux.conf
 bind v split-window -h
 bind Space copy-mode
 bind [ previous-window
