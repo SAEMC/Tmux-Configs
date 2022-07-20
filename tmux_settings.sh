@@ -151,7 +151,9 @@ function writeScripts() {
 set -g base-index 1
 set -g default-terminal "xterm-256color"
 set -g history-limit 10000
+set -g pane-active-border-style bg=default,fg=green
 set -g pane-base-index 1
+set -g pane-border-style fg=red
 set -g prefix C-Space
 set -g status-bg black
 set -g status-fg white
