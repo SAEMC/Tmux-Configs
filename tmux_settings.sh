@@ -186,8 +186,8 @@ unbind -T prefix n
 unbind -T prefix \\"
 unbind -T prefix %
 
-bind C-s select-layout even-vertical
-bind C-v select-layout even-horizontal
+bind M-s select-layout even-vertical
+bind M-v select-layout even-horizontal
 bind -r M-h resize-pane -L
 bind -r M-j resize-pane -D
 bind -r M-k resize-pane -U
