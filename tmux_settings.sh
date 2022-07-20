@@ -183,6 +183,7 @@ unbind -T prefix M-Right
 unbind -T prefix M-1
 unbind -T prefix M-2
 unbind -T prefix n
+unbind -T prefix r
 unbind -T prefix \\"
 unbind -T prefix %
 
@@ -199,8 +200,8 @@ bind j select-pane -D
 bind k select-pane -U
 bind l select-pane -R
 bind p paste-buffer
+bind r source-file \$HOME/.tmux.conf
 bind s split-window -v
-bind u source-file \$HOME/.tmux.conf
 bind v split-window -h
 bind Space copy-mode
 bind [ previous-window
