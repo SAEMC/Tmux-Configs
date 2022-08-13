@@ -1,4 +1,4 @@
-# SAEMC Tmux Settings
+# SAEMC's Tmux Settings
 
 ### 준비 사항
 
@@ -24,8 +24,8 @@ $ ./tmux_settings.sh [OPTIONS]
 - 설치 활성화
 
 ```bash
-$ source ~/.bashrc (Linux인 경우)
-$ source ~/.zshrc (Mac인 경우)
+source ~/.bashrc (Linux인 경우)
+source ~/.zshrc (Mac인 경우)
 ```
 
 ---
