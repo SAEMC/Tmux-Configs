@@ -155,6 +155,7 @@ set -g pane-active-border-style bg=default,fg=green
 set -g pane-base-index 1
 set -g pane-border-style fg=red
 set -g prefix C-Space
+set -g set-clipboard on
 set -g status-bg black
 set -g status-fg white
 set -g status-interval 20
