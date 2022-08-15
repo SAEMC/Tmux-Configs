@@ -16,7 +16,7 @@ apt-get update && apt-get install -y sudo git
 
 ```bash
 git clone https://github.com/SAEMC/Tmux-Settings && \
-cd ./Vim-Configs
+cd ./Tmux-Settings
 ```
 
 > `$ ./vim_settings.sh -a` -> 디펜던시 설치 후 스크립트 작성
