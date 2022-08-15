@@ -51,8 +51,6 @@ source ~/.bashrc
 source ~/.zshrc
 ```
 
-<br/>
-
 ---
 
 ### 사용 방법
