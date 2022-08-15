@@ -2,31 +2,56 @@
 
 ### 준비 사항
 
-- `sudo` 및 `git` 설치
-  > Mac은 XCode 및 Homebrew가 이미 설치되어 있는 환경
+- `sudo` 및 `git` 설치 (Ubuntu만 해당)
+
+> 최초 설치인 경우에만 다음 명령어 실행
 
 ```bash
-$ (sudo) apt-get update && \
-  (sudo) apt-get install -y sudo git
+apt-get update && apt-get install -y sudo git
 ```
 
-- SAEMC Tmux-Settings 프로젝트 다운로드 및 실행
-  > `$ ./tmux_settings.sh -a` -> Dependencies 설치 후 Scripts 작성  
-  > `$ ./tmux_settings.sh -d` -> Dependencies만 설치  
-  > `$ ./tmux_settings.sh -s` -> Scripts만 작성
+<br/>
+
+- SAEMC Tmux-Settings 다운로드 및 실행
 
 ```bash
-$ git clone https://github.com/SAEMC/Tmux-Settings && \
-  cd ./Tmux-Settings
-$ ./tmux_settings.sh [OPTIONS]
+git clone https://github.com/SAEMC/Tmux-Settings && \
+cd ./Vim-Configs
 ```
 
-- 설치 활성화
+> `$ ./vim_settings.sh -a` -> 디펜던시 설치 후 스크립트 작성
+>
+> `$ ./vim_settings.sh -d` -> 디펜던시만 설치
+>
+> `$ ./vim_settings.sh -s` -> SAEMC만 설치 (디펜던시 설치 후)
 
 ```bash
-source ~/.bashrc (Linux인 경우)
-source ~/.zshrc (Mac인 경우)
+./tmux_settings.sh [OPTIONS]
 ```
+
+> (권장) 디펜던시 설치 후 스크립트 작성
+
+```bash
+./tmux_settings.sh -a
+```
+
+<br/>
+
+- 디펜던시 설치 활성화
+
+> Ubuntu인 경우
+
+```bash
+source ~/.bashrc
+```
+
+> Mac인 경우
+
+```bash
+source ~/.zshrc
+```
+
+<br/>
 
 ---
 
