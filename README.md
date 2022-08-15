@@ -23,7 +23,7 @@ cd ./Vim-Configs
 >
 > `$ ./vim_settings.sh -d` -> 디펜던시만 설치
 >
-> `$ ./vim_settings.sh -s` -> SAEMC만 설치 (디펜던시 설치 후)
+> `$ ./vim_settings.sh -s` -> 스크립트만 작성 (디펜던시 설치 후)
 
 ```bash
 ./tmux_settings.sh [OPTIONS]
