@@ -55,7 +55,7 @@ source ~/.zshrc
 
 ### 2-1. 커맨드 변경
 
-##### 기존 Prefix [ `<Ctrl>` + `b` ]에서 [ `<Ctrl>` + `<Space>` ]로 변경
+##### 기존 Prefix [`<Ctrl>` + `b`]에서 [`<Ctrl>` + `<Space>`]로 변경
 
 ##### 매핑된 커맨드는 `~/.tmux.conf` 파일 확인
 
