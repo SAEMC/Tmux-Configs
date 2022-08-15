@@ -1,8 +1,10 @@
 # SAEMC's Tmux Settings
 
-### 준비 사항
+## 1. 준비 사항
 
-- `sudo` 및 `git` 설치 (Ubuntu만 해당)
+### 1-1. (권장) SAEMC's [iTerm2](https://github.com/SAEMC/iTerm2-Settings.git) 설정 적용
+
+### 1-2. (Ubuntu만 해당) `sudo` 및 `git` 설치
 
 > 최초 설치인 경우에만 다음 명령어 실행
 
@@ -10,9 +12,7 @@
 apt-get update && apt-get install -y sudo git
 ```
 
-<br/>
-
-- SAEMC Tmux-Settings 다운로드 및 실행
+### 1-3. SAEMC Tmux-Settings 다운로드 및 실행
 
 ```bash
 git clone https://github.com/SAEMC/Tmux-Settings && \
@@ -35,9 +35,7 @@ cd ./Tmux-Settings
 ./tmux_settings.sh -a
 ```
 
-<br/>
-
-- 디펜던시 설치 활성화
+### 1-4. 디펜던시 설치 활성화
 
 > Ubuntu인 경우
 
@@ -53,15 +51,13 @@ source ~/.zshrc
 
 ---
 
-### 사용 방법
+## 2. 사용 방법
 
-#### 기존 Prefix `<Ctrl>` + `b`에서 `<Ctrl>` + `<Space>`로 변경
+### 기존 Prefix `<Ctrl>` + `b`에서 `<Ctrl>` + `<Space>`로 변경
 
-#### 매핑된 커맨드는 `~/.tmux.conf` 파일 확인
+### 매핑된 커맨드는 `~/.tmux.conf` 파일 확인
 
-#### 이외의 커맨드는 Tmux 기본 커맨드 (Tmux 기본 커맨드 참조)
-
-<br/>
+### 이외의 커맨드는 Tmux 기본 커맨드 (Tmux 기본 커맨드 참조)
 
 - `<Ctrl>` + `<Space>` + `<Opt>` + [[`h` or `j` or `k` or `l`]]: 페인(Pane) 크기 조절 (`<Opt>` 누른 상태에서 3초 내 반복(Repeat) 가능)
 - `<Ctrl>` + `<Space>` + `<Opt>` + `s`: 페인 수평 정렬 (Split)
