@@ -12,7 +12,7 @@
 apt-get update && apt-get install -y sudo git
 ```
 
-### 1-3. SAEMC Tmux-Settings 다운로드 및 실행
+### 1-3. SAEMC's Tmux-Settings 다운로드 및 실행
 
 ```bash
 git clone https://github.com/SAEMC/Tmux-Settings && \
