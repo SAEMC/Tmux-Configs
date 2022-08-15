@@ -59,6 +59,8 @@ source ~/.zshrc
 
 ### 이외의 커맨드는 Tmux 기본 커맨드 (Tmux 기본 커맨드 참조)
 
+<br/>
+
 - `<Ctrl>` + `<Space>` + `<Opt>` + [[`h` or `j` or `k` or `l`]]: 페인(Pane) 크기 조절 (`<Opt>` 누른 상태에서 3초 내 반복(Repeat) 가능)
 - `<Ctrl>` + `<Space>` + `<Opt>` + `s`: 페인 수평 정렬 (Split)
 - `<Ctrl>` + `<Space>` + `<Opt>` + `v`: 페인 수직 정렬 (Vertical Split)
