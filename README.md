@@ -53,11 +53,13 @@ source ~/.zshrc
 
 ## 2. 사용 방법
 
-### 기존 Prefix `<Ctrl>` + `b`에서 `<Ctrl>` + `<Space>`로 변경
+### 2-1. 커맨드 변경
 
-### 매핑된 커맨드는 `~/.tmux.conf` 파일 확인
+##### 기존 Prefix `<Ctrl>` + `b`에서 `<Ctrl>` + `<Space>`로 변경
 
-### 이외의 커맨드는 Tmux 기본 커맨드 (Tmux 기본 커맨드 참조)
+##### 매핑된 커맨드는 `~/.tmux.conf` 파일 확인
+
+##### 이외의 커맨드는 Tmux 기본 커맨드 (Tmux 기본 커맨드 참조)
 
 <br/>
 
