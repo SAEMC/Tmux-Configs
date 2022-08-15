@@ -1,8 +1,8 @@
-# SAEMC's Tmux Settings
+# SAEMC's Tmux Configs
 
 ## 1. 준비 사항
 
-### 1-1. (권장) SAEMC's [iTerm2](https://github.com/SAEMC/iTerm2-Settings.git) 설정 적용
+### 1-1. (권장) SAEMC's [iTerm2](https://github.com/SAEMC/iTerm2-Configs.git) 설정 적용
 
 ### 1-2. (Ubuntu만 해당) `sudo` 및 `git` 설치
 
@@ -12,27 +12,27 @@
 apt-get update && apt-get install -y sudo git
 ```
 
-### 1-3. SAEMC's Tmux-Settings 다운로드 및 실행
+### 1-3. SAEMC's Tmux-Configs 다운로드 및 실행
 
 ```bash
-git clone https://github.com/SAEMC/Tmux-Settings && \
-cd ./Tmux-Settings
+git clone https://github.com/SAEMC/Tmux-Configs && \
+cd ./Tmux-Configs
 ```
 
-> `$ ./tmux_settings.sh -a` -> 디펜던시 설치 후 스크립트 작성
+> `$ ./tmux_configs.sh -a` -> 디펜던시 설치 후 스크립트 작성
 >
-> `$ ./tmux_settings.sh -d` -> 디펜던시만 설치
+> `$ ./tmux_configs.sh -d` -> 디펜던시만 설치
 >
-> `$ ./tmux_settings.sh -s` -> 스크립트만 작성 (디펜던시 설치 후)
+> `$ ./tmux_configs.sh -s` -> 스크립트만 작성 (디펜던시 설치 후)
 
 ```bash
-./tmux_settings.sh [OPTIONS]
+./tmux_configs.sh [OPTIONS]
 ```
 
 > (권장) 디펜던시 설치 후 스크립트 작성
 
 ```bash
-./tmux_settings.sh -a
+./tmux_configs.sh -a
 ```
 
 ### 1-4. 디펜던시 설치 활성화
