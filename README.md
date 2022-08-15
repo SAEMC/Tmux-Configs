@@ -1,4 +1,4 @@
-# SAEMC's Tmux Configs
+# SAEMC's Tmux-Configs
 
 ## 1. 준비 사항
 
