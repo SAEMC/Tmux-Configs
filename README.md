@@ -1,5 +1,7 @@
 # SAEMC's Tmux-Configs
 
+test
+
 ## 1. 준비 사항
 
 ### 1-1. (권장) SAEMC's [iTerm2](https://github.com/SAEMC/iTerm2-Configs.git) 설정 적용
