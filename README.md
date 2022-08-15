@@ -49,7 +49,7 @@ source ~/.bashrc
 source ~/.zshrc
 ```
 
----
+<br/>
 
 ## 2. 사용 방법
 
