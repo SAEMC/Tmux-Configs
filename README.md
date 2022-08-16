@@ -67,10 +67,10 @@ source ~/.zshrc
 - `<Ctrl>` + `<Space>` + `<Opt>` + `s`: 페인 수평 정렬 (Split)
 - `<Ctrl>` + `<Space>` + `<Opt>` + `v`: 페인 수직 정렬 (Vertical Split)
 - `<Ctrl>` + `<Space>` + `<Space>`: Copy Mode 진입 (Vi 계열 커맨드 사용)
-- `<Ctrl>` + `<Space>` + [[`h` or `j` or `k` or `l`]]: 페인 이동
+- `<Ctrl>` + `<Space>` + `h`/`j`/`k`/`l`: 페인 이동
 - `<Ctrl>` + `<Space>` + `p`: 붙여넣기 (Paste)
 - `<Ctrl>` + `<Space>` + `r`: `~/.tmux.conf` 새로고침 (Refresh)
 - `<Ctrl>` + `<Space>` + `s`: 페인 수평 분할 (Split)
 - `<Ctrl>` + `<Space>` + `v`: 페인 수직 분할 (Vertical Split)
 - `<Ctrl>` + `<Space>` + `y`: Copy Mode에서 복사 (Yank)
-- `<Ctrl>` + `<Space>` + [[`[` or `]`]]: 윈도우 이동
+- `<Ctrl>` + `<Space>` + `[`/`]`: 윈도우 이동
