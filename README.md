@@ -59,7 +59,7 @@ source ~/.zshrc
 
 #### 2-1-2. 매핑된 커맨드는 `~/.tmux.conf` 파일 확인
 
-#### 2-1-3. 이외의 커맨드는 Tmux 기본 커맨드 ([Tmux](https://github.com/tmux/tmux) 참조)
+#### 2-1-3. 이외의 커맨드는 Tmux 기본 커맨드 ([Tmux](https://github.com/tmux/tmux) 참조 또는 `tmux list-keys` 실행)
 
 <br/>
 
