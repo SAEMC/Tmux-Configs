@@ -185,6 +185,7 @@ unbind -T prefix M-1
 unbind -T prefix M-2
 unbind -T prefix n
 unbind -T prefix r
+unbind -T prefix \\"
 unbind -T prefix %
 
 bind M-s select-layout even-vertical
