@@ -161,7 +161,7 @@ set -g status-fg white
 set -g status-interval 20
 set -g status-keys vi
 set -g status-left-length 30
-set -g status-left '#[fg=blue,bright][ #[fg=yellow,bold]#S #[fg=blue,bright]] '
+set -g status-left '#[fg=yellow,bold][ #S ] '
 set -g status-right ''
 set -ga terminal-overrides ",*256col*:Tc"
 set -sg escape-time 0
