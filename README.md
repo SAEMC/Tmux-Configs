@@ -51,7 +51,7 @@ source ~/.zshrc
 
 ### 1-5. 플러그인 설치
 
-- `<Ctrl>` + `<Space>` + `<Shift>` + `i`: 플러그인 설치
+- `<Ctrl>` + `<Space>` + `<Shift>` + `i`: 플러그인 설치 (Install)
 
 <br/>
 
