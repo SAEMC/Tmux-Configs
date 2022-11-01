@@ -215,7 +215,7 @@ bind [ previous-window
 bind ] next-window
 
 # Initialize Tmux plugin manager (keep this line at the very bottom)
-run '~/.tmux/plugins/tpm/tpm'
+run '\$HOME/.tmux/plugins/tpm/tpm'
 EOF
 
   # Clear ~/.tmux/plugins/tpm directory
@@ -225,7 +225,7 @@ EOF
   fi
 
   # Install tpm
-  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+  git clone https://github.com/tmux-plugins/tpm ${HOME}/.tmux/plugins/tpm
 }
 
 usage_msg="Usage:  $(basename $0) [-a] [-d] [-s]"
