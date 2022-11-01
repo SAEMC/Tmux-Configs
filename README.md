@@ -49,6 +49,10 @@ source ~/.bashrc
 source ~/.zshrc
 ```
 
+### 1-5. 플러그인 설치
+
+- `<Ctrl>` + `<Space>` + `<S-i>`: 플러그인 설치
+
 <br/>
 
 ## 2. 사용 방법

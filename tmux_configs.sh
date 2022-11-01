@@ -138,7 +138,7 @@ function writeScripts() {
     exit 1
   fi
 
-  # Clear ~/tmux.conf
+  # Clear ~/.tmux.conf
   if [[ -f ${HOME}/.tmux.conf ]]; then
     echo -e "\n *** Clear ~/.tmux.conf *** \n"
     sudo rm ${HOME}/.tmux.conf
@@ -148,21 +148,27 @@ function writeScripts() {
   echo -e "\n *** Write Config into ~/.tmux.conf *** \n"
   cat >${HOME}/.tmux.conf <<EOF
 
+# Plugins
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'jimeh/tmux-themepack'
+set -g @plugin 'tmux-plugins/tmux-resurrect'
+set -g @plugin 'tmux-plugins/tmux-continuum'
+
+# Plugin options
+set -g @themepack 'powerline/default/yellow'
+set -g @resurrect-capture-pane-contents 'on'
+set -g @continuum-restore 'on'
+
+# Default options
 set -g base-index 1
 set -g default-terminal "xterm-256color"
 set -g history-limit 10000
-set -g pane-active-border-style bg=default,fg=green
 set -g pane-base-index 1
-set -g pane-border-style fg=red
 set -g prefix C-Space
 set -g set-clipboard on
-set -g status-bg black
-set -g status-fg white
 set -g status-interval 20
 set -g status-keys vi
 set -g status-left-length 30
-set -g status-left '#[fg=yellow,bold][ #S ] '
-set -g status-right ''
 set -ga terminal-overrides ",*256col*:Tc"
 set -sg escape-time 0
 setw -g mode-keys vi
@@ -172,9 +178,8 @@ set-option -g renumber-windows on
 set-option -g repeat-time 3000
 set-option -g set-titles on
 set-window-option -g automatic-rename on
-set-window-option -g window-status-activity-style fg=red
-set-window-option -g window-status-current-style fg=green,bold
 
+# Unbindings
 unbind C-b
 unbind -T copy-mode-vi Space
 unbind -T prefix M-Up
@@ -185,9 +190,10 @@ unbind -T prefix M-1
 unbind -T prefix M-2
 unbind -T prefix n
 unbind -T prefix r
-unbind -T prefix \\"
+unbind -T prefix \"
 unbind -T prefix %
 
+# Bindings
 bind M-s select-layout even-vertical
 bind M-v select-layout even-horizontal
 bind -r M-h resize-pane -L
@@ -201,13 +207,25 @@ bind j select-pane -D
 bind k select-pane -U
 bind l select-pane -R
 bind p paste-buffer
-bind r source-file \$HOME/.tmux.conf
+bind r source-file ~/.tmux.conf
 bind s split-window -v
 bind v split-window -h
 bind Space copy-mode
 bind [ previous-window
 bind ] next-window
+
+# Initialize Tmux plugin manager (keep this line at the very bottom)
+run '~/.tmux/plugins/tpm/tpm'
 EOF
+
+  # Clear ~/.tmux/plugins/tpm directory
+  if [[ -d ${HOME}/.tmux/plugins/tpm ]]; then
+    echo -e "\n *** Clear ~/.tmux/plugins/tpm directory *** \n"
+    sudo rm -rf ${HOME}/.tmux/plugins/tpm
+  fi
+
+  # Install tpm
+  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 }
 
 usage_msg="Usage:  $(basename $0) [-a] [-d] [-s]"
