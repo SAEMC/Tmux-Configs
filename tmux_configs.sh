@@ -248,7 +248,7 @@ while getopts ':ads :h' opt; do
       args+="${opt}"
       ;;
     h)
-      echo -e "The way you install SAEMC Tmux Settings.\n"
+      echo -e "The way you install SAEMC Tmux-Configs.\n"
       echo -e "${usage_msg}\n"
       echo -e "$option_msg"
       exit 0
