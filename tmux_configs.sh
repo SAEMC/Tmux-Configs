@@ -176,7 +176,7 @@ set-window-option -g automatic-rename on
 set-window-option -g window-status-activity-style fg=red
 set-window-option -g window-status-current-style fg=green,bold
 
-# Unbindings
+# Unbinding keys
 unbind C-b
 unbind -T copy-mode-vi Space
 unbind -T prefix M-Up
@@ -190,7 +190,7 @@ unbind -T prefix r
 unbind -T prefix \"
 unbind -T prefix %
 
-# Bindings
+# Binding keys
 bind M-s select-layout even-vertical
 bind M-v select-layout even-horizontal
 bind -r M-h resize-pane -L
