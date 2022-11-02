@@ -148,27 +148,22 @@ function writeScripts() {
   echo -e "\n *** Write Config into ~/.tmux.conf *** \n"
   cat >${HOME}/.tmux.conf <<EOF
 
-# Plugins
-set -g @plugin 'tmux-plugins/tpm'
-set -g @plugin 'jimeh/tmux-themepack'
-set -g @plugin 'tmux-plugins/tmux-resurrect'
-set -g @plugin 'tmux-plugins/tmux-continuum'
-
-# Plugin options
-set -g @themepack 'powerline/default/yellow'
-set -g @resurrect-capture-pane-contents 'on'
-set -g @continuum-restore 'on'
-
 # Default options
 set -g base-index 1
 set -g default-terminal "xterm-256color"
 set -g history-limit 10000
+set -g pane-active-border-style bg=default,fg=green
 set -g pane-base-index 1
+set -g pane-border-style fg=red
 set -g prefix C-Space
 set -g set-clipboard on
+set -g status-bg black
+set -g status-fg white
 set -g status-interval 20
 set -g status-keys vi
 set -g status-left-length 30
+set -g status-left '#[fg=yellow,bold][ #S ] '
+set -g status-right ''
 set -ga terminal-overrides ",*256col*:Tc"
 set -sg escape-time 0
 setw -g mode-keys vi
@@ -178,6 +173,8 @@ set-option -g renumber-windows on
 set-option -g repeat-time 3000
 set-option -g set-titles on
 set-window-option -g automatic-rename on
+set-window-option -g window-status-activity-style fg=red
+set-window-option -g window-status-current-style fg=green,bold
 
 # Unbindings
 unbind C-b
@@ -214,7 +211,16 @@ bind Space copy-mode
 bind [ previous-window
 bind ] next-window
 
-# Initialize Tmux plugin manager (keep this line at the very bottom)
+# Plugins
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-resurrect'
+set -g @plugin 'tmux-plugins/tmux-continuum'
+
+# Plugin options
+set -g @resurrect-capture-pane-contents 'on'
+set -g @continuum-restore 'on'
+
+# Initialize Tmux plugin manager (keep this line at the very bottom of tmux.conf)
 run '\$HOME/.tmux/plugins/tpm/tpm'
 EOF
 
