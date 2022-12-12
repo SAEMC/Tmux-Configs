@@ -1,80 +1,107 @@
 # SAEMC's Tmux-Configs
 
-## 1. 준비 사항
+## Prerequisites
 
-### 1-1. (권장) SAEMC's [iTerm2](https://github.com/SAEMC/iTerm2-Configs.git) 설정 적용
+### Recommended
 
-### 1-2. (Ubuntu만 해당) `sudo` 및 `git` 설치
+#### OS version
 
-> 최초 설치인 경우에만 다음 명령어 실행
+- Ubuntu >= 20.04 LTS
+- macOS >= Big Sur
 
-```bash
+#### Install and apply
+
+- SAEMC's [iTerm2-Configs](https://github.com/SAEMC/iTerm2-Configs.git)
+
+### (Optional) Install `sudo` and `git`
+
+- If you'd never installed, run the following command
+
+```shell
 apt-get update && apt-get install -y sudo git
 ```
 
-### 1-3. SAEMC's Tmux-Configs 다운로드 및 실행
+### Clone this repository
 
-```bash
+```shell
 git clone https://github.com/SAEMC/Tmux-Configs && \
-cd ./Tmux-Configs
+cd ./Tmux-Configs/
 ```
 
-> `$ ./tmux_configs.sh -a` -> 디펜던시 설치 후 스크립트 작성
->
-> `$ ./tmux_configs.sh -d` -> 디펜던시만 설치
->
-> `$ ./tmux_configs.sh -s` -> 스크립트만 작성 (디펜던시 설치 후)
+<br/>
 
-```bash
-./tmux_configs.sh [OPTIONS]
-```
+## Installation
 
-> (권장) 디펜던시 설치 후 스크립트 작성
+- Enter following command: `./tmux_configs.sh [OPTION]` (must be in `Tmux-Configs` directory)
 
-```bash
+### Recommended
+
+- Install dependencies and write scripts
+
+```shell
 ./tmux_configs.sh -a
 ```
 
-### 1-4. 디펜던시 설치 활성화
+### Install partially
 
-> Ubuntu인 경우
+#### Install dependencies
 
-```bash
+```shell
+./tmux_configs.sh -d
+```
+
+#### Write scripts
+
+```shell
+./tmux_configs.sh -s
+```
+
+### Activate dependencies in current shell
+
+#### Ubuntu
+
+```shell
 source ~/.bashrc
 ```
 
-> Mac인 경우
+#### macOS
 
-```bash
+```shell
 source ~/.zshrc
 ```
 
-### 1-5. 플러그인 설치
+### Remove this repository
 
-- `<Ctrl>` + `<Space>` + `<Shift>` + `i`: 플러그인 설치 (Install)
+```shell
+cd .. && rm -r ./Tmux-Configs/
+```
 
-<br/>
+### Install plugins
 
-## 2. 사용 방법
-
-### 2-1. 변경된 커맨드
-
-#### 2-1-1. 기존 Prefix `<Ctrl>` + `b`에서 `<Ctrl>` + `<Space>`로 변경
-
-#### 2-1-2. 매핑된 커맨드는 `~/.tmux.conf` 파일 확인
-
-#### 2-1-3. 이외의 커맨드는 Tmux 기본 커맨드 ([Tmux](https://github.com/tmux/tmux) 참조 또는 `$ tmux list-keys` 실행)
+- `<Ctrl>` + `<Space>` + `<Shift>` + `i`: Install plugins
 
 <br/>
 
-- `<Ctrl>` + `<Space>` + `<Opt>` + `h`/`j`/`k`/`l`: 페인(Pane) 크기 조절 (`<Opt>` 누른 상태에서 3초 내 반복(Repeat) 가능)
-- `<Ctrl>` + `<Space>` + `<Opt>` + `s`: 페인 수평 정렬 (Split)
-- `<Ctrl>` + `<Space>` + `<Opt>` + `v`: 페인 수직 정렬 (Vertical Split)
-- `<Ctrl>` + `<Space>` + `<Space>`: Copy Mode 진입 (Vi 계열 커맨드 사용)
-- `<Ctrl>` + `<Space>` + `h`/`j`/`k`/`l`: 페인 이동
-- `<Ctrl>` + `<Space>` + `p`: 붙여넣기 (Paste)
-- `<Ctrl>` + `<Space>` + `r`: `~/.tmux.conf` 새로고침 (Refresh)
-- `<Ctrl>` + `<Space>` + `s`: 페인 수평 분할 (Split)
-- `<Ctrl>` + `<Space>` + `v`: 페인 수직 분할 (Vertical Split)
-- `<Ctrl>` + `<Space>` + `y`: Copy Mode에서 복사 (Yank)
-- `<Ctrl>` + `<Space>` + `[`/`]`: 윈도우 이동
+## Usages
+
+### The changed commands
+
+#### The prefix has been changed from `<Ctrl>` + `b` to `<Ctrl>` + `<Space>`
+
+#### You can check mapped commands in `~/.tmux.conf` file
+
+#### Other commands are same with Tmux default commands (see [Tmux](https://github.com/tmux/tmux) references or run `$ tmux list-keys`)
+
+<br/>
+
+- `<Ctrl>` + `<Space>` + `<Opt>` + `h`/`j`/`k`/`l`: Resize size of Pane (can be repeated within 3 seconds after push `<Opt>`)
+- `<Ctrl>` + `<Space>` + `<Opt>` + `s`: Align panes by horizon
+- `<Ctrl>` + `<Space>` + `<Opt>` + `v`: Align panes by vertical
+- `<Ctrl>` + `<Space>` + `<Space>`: Enter Copy mode (Vi mode)
+- `<Ctrl>` + `<Space>` + `h`/`j`/`k`/`l`: Move cursor along panes
+- `<Ctrl>` + `<Space>` + `p`: Paste characters or lines
+- `<Ctrl>` + `<Space>` + `r`: Refresh `~/.tmux.conf`
+- `<Ctrl>` + `<Space>` + `s`: Split panes by horizon
+- `<Ctrl>` + `<Space>` + `v`: Split panes by vertical
+- `<Ctrl>` + `<Space>` + `y`: Yank characters or lines in Copy mode
+- `<Ctrl>` + `<Space>` + `[`/`]`: Move cursor along windows
