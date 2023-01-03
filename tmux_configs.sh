@@ -199,6 +199,7 @@ bind -r M-k resize-pane -U
 bind -r M-l resize-pane -R
 bind -r C-Space send-prefix
 bind -T copy-mode-vi v send -X begin-selection
+bind -T prefix w choose-tree -O name
 bind h select-pane -L
 bind j select-pane -D
 bind k select-pane -U
